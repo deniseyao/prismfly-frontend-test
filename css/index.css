@@ -18,7 +18,7 @@ html {
 }
 body {
   color: var(--secondary-color);
-  font-family: sans-serif;
+  font-family: var(--main-font), sans-serif;
   background-color: #FFFFFF;
   width: 100%;
   margin: 0;
@@ -50,6 +50,7 @@ a:hover {
   text-decoration: none;
 }
 p {
+  font-family: var(--support-font), serif;
   font-size: 20px;
   line-height: 1.5em;
 }
@@ -126,7 +127,7 @@ p {
     -o-border-radius: 8px;
     overflow: hidden;
   }
-  .countrySlider__slide-text-content {
+  .countrySlider__slide-text-content, .countrySlider__slide-reverse .countrySlider__slide-text-content {
     text-align: center;
     padding: 28px 10px;
   }
